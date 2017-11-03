@@ -1,0 +1,13 @@
+﻿<!--Since the data type of modal is dynamic,
+    we need to a directive to specify the type of modal for this view on the top of the file -->
+<!--To specific the type of dynamic, define model with lowercase letter-->
+
+@model Vidly.Models.Movie
+@{
+    ViewBag.Title = "Random";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!--When you call the Modal, by default from Razor, please use Uppercase letter -->
+<h2>@Model.Name</h2>
+
